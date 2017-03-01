@@ -52,9 +52,9 @@
             @Html.LabelFor(model => model.Category, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <!--Need to create the instance of this model into a list. C# does not want to create a one to one relationship in the model
-                    So not exactly sure why it does not want to create a enumerable object from it's foreign key
-                    -->
-                @Html.DropDownListFor(model => model.Category, new SelectList(Model.Category, "Name", "Id"))
+                    So not exactly sure why it does not want to create a enumerable object from it's foreign key-->
+                    
+             
                 @Html.ValidationMessageFor(model => model.Category.Name, "", new { @class = "text-danger" })
             </div>
         </div>
